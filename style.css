@@ -239,7 +239,7 @@ h5 {
         margin: 0;
         font-size: 16px;
         font-family: 'Outfit', sans-serif;
-        
+
     }
 
     .container {
@@ -260,9 +260,12 @@ h5 {
         margin-bottom: 1.5em;
     }
 
-    h1, h3, h4, h5 {
+    h1,
+    h3,
+    h4,
+    h5 {
         font-family: 'Young Serif', serif;
-        
+
     }
 
     h1 {
@@ -289,7 +292,7 @@ h5 {
         font-size: 1.25em;
         padding-left: 0;
         margin-bottom: 1em;
-        
+
     }
 
     .lista-preparacion {
@@ -302,18 +305,23 @@ h5 {
         list-style-type: none;
     }
 
-    h3, h4, h5 {
+    h3,
+    h4,
+    h5 {
         font-size: 1.5em;
-        margin: 1.5em 1rem 1em;
+        margin: 1em 1em 1em;
     }
 
-    .lista-ingrediente, .lista-instructions {
+    .lista-ingrediente,
+    .lista-instructions {
         margin: 1em 1rem;
-        padding-left: 1.25em;
+        padding-left: 1.2em;
     }
 
-    .lista-ingrediente li, .lista-instructions li {
+    .lista-ingrediente li,
+    .lista-instructions li {
         margin-bottom: 0.8em;
+        text-align: justify;
     }
 
     .lista-instructions {
@@ -333,16 +341,16 @@ h5 {
         position: absolute;
         left: 0;
         font-weight: bold;
-        
+
     }
 
     .lista-instructions li b {
         display: block;
-        margin-bottom: 0.2em;
+        margin-bottom: 0em;
     }
 
     .bb {
-        margin: 2em 1rem;
+        margin: 1em 1em;
         border: none;
         border-top: 1px solid #E3E3E3;
         width: calc(100% - 2rem);
@@ -356,28 +364,29 @@ h5 {
     .tabla {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 0.75em 1em;
+        gap: 0.5em 1em;
         align-items: center;
-        font-size: 1em;
-        margin: 0 1rem;
+        max-width: 100%;
+        justify-content: center;
     }
 
     .tabla p {
-        margin: 0;
-        padding: 0;
+        padding-left: 4em;
     }
 
     .tabla span {
+        padding-right: 4em;
+        font-weight: bold;
+        text-align: right;
+        justify-self: start;
+        
         font-weight: 600;
-        justify-self: end;
-        padding-left: 1em;
-        text-aling: rigth; 
     }
 
     .tabla hr {
-        grid-column: 1 / -1;
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin-left: 1em;
+        margin-right: 1em;
         border: none;
         border-top: 1px solid #E3E3E3;
     }
