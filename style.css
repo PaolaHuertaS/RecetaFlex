@@ -371,6 +371,7 @@ h5 {
         font-weight: 600;
         justify-self: end;
         padding-left: 1em;
+        text-aling: rigth; 
     }
 
     .tabla hr {
