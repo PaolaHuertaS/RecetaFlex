@@ -233,19 +233,21 @@ h5 {
     font-style: normal;
 }
 
-@media screen and (max-width: 23.4375em) { /* 375px */
+@media screen and (max-width: 375px) {
     body {
         padding: 0;
         margin: 0;
         font-size: 16px;
-        line-height: 1.5;
-        color: #333;
+        font-family: 'Outfit', sans-serif;
+        color: #5F564D;
     }
 
     .container {
         width: 100%;
         max-width: 23.4375em;
-        padding: 1.25em;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
@@ -253,49 +255,59 @@ h5 {
     img {
         width: 100%;
         height: auto;
-        border-radius: 0.5em;
-        margin-bottom: 1em;
+        border-radius: 0;
+        margin-bottom: 1.5em;
+    }
+
+    h1, h3, h4, h5 {
+        font-family: 'Young Serif', serif;
+        color: #312E2C;
     }
 
     h1 {
-        font-size: 1.5em;
-        margin: 0.5em 0;
+        font-size: 1.75em;
+        margin: 0 1rem 0.5em;
     }
 
     .primero {
-        font-size: 0.875em;
-        margin-bottom: 1.5em;
-        color: #666;
+        font-size: 1em;
+        margin: 0 1rem 1.5em;
+        line-height: 1.5;
     }
 
     .preparation {
-        background-color: #f9f9f9;
-        padding: 1em;
-        margin-bottom: 1.5em;
-        border-radius: 0.5em;
+        width: auto;
+        height: auto;
+        padding: 1.5em 1rem;
+        margin: 0 1rem 2em;
+        border-radius: 0.625em;
+        background-color: #FFF7FB;
     }
 
     h2 {
-        font-size: 1.125em;
-        margin: 0 0 0.5em 0;
+        font-size: 1.25em;
+        padding-left: 0;
+        margin-bottom: 1em;
+        color: #854632;
     }
 
     .lista-preparacion {
-        list-style-type: none;
         padding-left: 0;
+        color: #854632;
     }
 
     .lista-preparacion li {
         margin-bottom: 0.5em;
+        list-style-type: none;
     }
 
     h3, h4, h5 {
-        font-size: 1.25em;
-        margin: 1.25em 0 0.5em 0;
+        font-size: 1.5em;
+        margin: 1.5em 1rem 1em;
     }
 
     .lista-ingrediente, .lista-instructions {
-        margin: 1em 0;
+        margin: 1em 1rem;
         padding-left: 1.25em;
     }
 
@@ -303,38 +315,62 @@ h5 {
         margin-bottom: 0.8em;
     }
 
+    .lista-instructions {
+        padding-left: 0;
+        list-style-type: none;
+        counter-reset: instruction;
+    }
+
+    .lista-instructions li {
+        counter-increment: instruction;
+        position: relative;
+        padding-left: 2em;
+    }
+
+    .lista-instructions li::before {
+        content: counter(instruction) ".";
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        color: #854632;
+    }
+
     .lista-instructions li b {
         display: block;
         margin-bottom: 0.2em;
+        color: #312E2C;
     }
 
     .bb {
-        margin: 2em 0;
+        margin: 2em 1rem;
+        border: none;
+        border-top: 1px solid #E3E3E3;
     }
 
     .segundo {
-        font-size: 0.875em;
-        color: #666;
-        margin-bottom: 1em;
+        font-size: 1em;
+        color: #5F564D;
+        margin: 0 1rem 1em;
     }
 
     .tabla {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 0.5em 1em;
+        gap: 0.75em 1em;
         align-items: center;
-        font-size: 0.875em;
+        font-size: 1em;
+        margin: 0 1rem;
     }
 
     .tabla p {
         margin: 0;
         padding: 0;
-        color: #666;
+        color: #5F564D;
     }
 
     .tabla span {
         font-weight: 600;
-        color: #333;
+        color: #854632;
         justify-self: end;
     }
 
@@ -343,6 +379,6 @@ h5 {
         width: 100%;
         margin: 0;
         border: none;
-        border-top: 1px solid #eee;
+        border-top: 1px solid #E3E3E3;
     }
 }
