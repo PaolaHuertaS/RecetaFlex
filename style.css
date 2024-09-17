@@ -233,10 +233,10 @@ h5 {
     font-style: normal;
 }
 
-
 @media screen and (max-width: 375px) { 
     body {
         padding: 0;
+        margin: 0;
         font-size: 16px; 
     }
 
@@ -245,7 +245,7 @@ h5 {
         max-width: 23.4375em; 
         height: auto;
         border-radius: 0;
-        padding: 2em 1.5em;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
@@ -253,71 +253,74 @@ h5 {
     img {
         width: 100%;
         height: auto;
-        border-radius: 0.625em; 
-        margin-bottom: 1em;
+        border-radius: 0;
+        margin-bottom: 0;
     }
 
     h1 {
         font-size: 2em;
-        margin: 0.5em 0;
+        margin: 1.5rem 1.5rem 1rem;
     }
 
     .primero {
-        font-size: 0.875em;
-        margin-bottom: 1.5em;
+        font-size: 1em;
+        margin: 0 1.5rem 2rem;
         line-height: 1.5;
     }
 
     .preparation {
         width: auto;
         height: auto;
-        padding: 1em;
-        margin-bottom: 1.5em;
+        padding: 1.5rem;
+        margin: 0 1.5rem 2rem;
         border-radius: 0.625em;
     }
 
     h2 {
         font-size: 1.25em;
         padding-left: 0;
-        margin-bottom: 0.5em;
+        margin-bottom: 1rem;
     }
 
     .lista-preparacion {
-        padding-left: 0;
+        padding-left: 1.25rem;
+        margin: 0;
     }
 
     .lista-preparacion li {
         margin-bottom: 0.5em;
     }
 
+    .anuncio, .tiempo {
+        display: inline;
+    }
+
     h3, h4, h5 {
         font-size: 1.75em;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
+        margin: 2rem 1.5rem 1rem;
     }
 
     .lista-ingrediente, .lista-instructions {
-        margin: 1em 0;
+        margin: 0 1.5rem 1.5rem;
         padding-left: 1.25em;
     }
 
     .lista-ingrediente li, .lista-instructions li {
-        margin-bottom: 0.8em;
+        margin-bottom: 1em;
     }
 
     .lista-instructions li b {
         display: block;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.5em;
     }
 
     .bb {
-        margin: 2em 0;
+        margin: 2em 1.5rem;
     }
 
     .segundo {
-        font-size: 0.875em;
-        color: var(--stone600);
-        margin-bottom: 1em;
+        font-size: 1em;
+        margin: 0 1.5rem 1rem;
     }
 
     .tabla {
@@ -325,26 +328,22 @@ h5 {
         grid-template-columns: 1fr auto;
         gap: 0.75em 1em;
         align-items: center;
-        font-size: 0.875em;
+        font-size: 1em;
+        margin: 0 1.5rem;
     }
 
     .tabla p {
         margin: 0;
         padding: 0;
-        color: var(--stone600);
     }
 
     .tabla span {
-        font-weight: 600;
-        color: var(--brown800);
         justify-self: end;
     }
 
     .tabla hr {
         grid-column: 1 / -1;
         width: 100%;
-        margin: 0;
-        border: none;
-        border-top: 1px solid var(--stone150);
+        margin: 0.5em 0;
     }
 }
