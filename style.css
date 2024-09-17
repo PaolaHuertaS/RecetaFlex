@@ -232,3 +232,119 @@ h5 {
     font-weight: 700;
     font-style: normal;
 }
+
+
+@media screen and (max-width: 375px) { 
+    body {
+        padding: 0;
+        font-size: 16px; 
+    }
+
+    .container {
+        width: 100%;
+        max-width: 23.4375em; 
+        height: auto;
+        border-radius: 0;
+        padding: 2em 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.625em; 
+        margin-bottom: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+
+    .primero {
+        font-size: 0.875em;
+        margin-bottom: 1.5em;
+        line-height: 1.5;
+    }
+
+    .preparation {
+        width: auto;
+        height: auto;
+        padding: 1em;
+        margin-bottom: 1.5em;
+        border-radius: 0.625em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        padding-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .lista-preparacion {
+        padding-left: 0;
+    }
+
+    .lista-preparacion li {
+        margin-bottom: 0.5em;
+    }
+
+    h3, h4, h5 {
+        font-size: 1.75em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .lista-ingrediente, .lista-instructions {
+        margin: 1em 0;
+        padding-left: 1.25em;
+    }
+
+    .lista-ingrediente li, .lista-instructions li {
+        margin-bottom: 0.8em;
+    }
+
+    .lista-instructions li b {
+        display: block;
+        margin-bottom: 0.2em;
+    }
+
+    .bb {
+        margin: 2em 0;
+    }
+
+    .segundo {
+        font-size: 0.875em;
+        color: var(--stone600);
+        margin-bottom: 1em;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.75em 1em;
+        align-items: center;
+        font-size: 0.875em;
+    }
+
+    .tabla p {
+        margin: 0;
+        padding: 0;
+        color: var(--stone600);
+    }
+
+    .tabla span {
+        font-weight: 600;
+        color: var(--brown800);
+        justify-self: end;
+    }
+
+    .tabla hr {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid var(--stone150);
+    }
+}
