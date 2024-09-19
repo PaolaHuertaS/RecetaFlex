@@ -21,7 +21,7 @@ body {
 .container {
     background-color: var(--blanc);
     width: 40em;
-    height: 104em;
+    height: 105em;
     border-radius: 20px;
     justify-content: center;
     flex-direction: column;
@@ -51,7 +51,7 @@ h2 {
 .primero {
     color: var(--stone900);
     font-family: "Outfit", sans-serif;
-    font-size: 0.90em;
+    font-size: 1em;
     margin-bottom: 2em;
 }
 
@@ -112,7 +112,7 @@ h5 {
 .lista-ingrediente {
     color: var(--stone600);
     font-family: "Outfit", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1em;
     margin-top: 1.2em;
     margin-left: 1.5em;
